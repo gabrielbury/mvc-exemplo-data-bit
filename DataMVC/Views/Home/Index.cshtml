@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-4">
+            <label class="control-label">Data</label>
+            <input type="text" name="txtData" id="txtData" class="form-control" />
+        </div>
+        <div class="col-lg-2 form-group">
+            <label class="control-label">&nbsp;</label>
+            <div><input type="checkbox" value="true" name="chkFeriado" /> É feriado?</div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-2">
+            <input type="submit" class="btn btn-info form-control" value="Enviar" />
+        </div>
+    </div>
+}
